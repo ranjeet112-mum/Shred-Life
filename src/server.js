@@ -7,7 +7,6 @@ const bodyParser = require('body-parser');
 const registeration = require('./../db/model/registeration')
 const cookieParser = require('cookie-parser');
 
-const username1="  ";
 
 const publicDirectory = path.join(__dirname,'../public');
 const viewPath= path.join(__dirname,'../template/views')
