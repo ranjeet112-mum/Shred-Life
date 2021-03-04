@@ -4,18 +4,70 @@
         <title>Shred Life</title>
         <link rel="shortcut icon    " href="img/shortcutlogo.png">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Rajdhani&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
-<BODY><p>HEY THERE USE SON OF A BISHH</p>
+<BODY>
 
-    <div id="hell"><p></p></div>
-    <script rel="text/javascript">
-        let x=0;
-        if(!x) {
-            const a = document.querySelector('#hell');
-            a.innerText ='hello there'
-        }
+    <header>
+        <div>
+            <div class="header-container">
+                <p class="title">ShredLife&#10084;&#65039;</p>
+                <div class="header-space"></div>
+                <div class="classbeforelogin"><div class="login"><p>Login</p></div></div>
+                <div class="classbeforesignup"><div class="signup" onclick="toggle()"><p>sign Up</p></div></div>
+            </div>
+        </div>
+    </header>  
+   
+   
+    <div class="main-body">
+        <div class="left-half">
+            <div class="motto">
+                <pre>Celebrating health</pre>
+            </div>
+            <div class="belowmotto">
+                <p>All progress takes place outside the comfort zone</p>
+                <p class="message">Help us to help you achieve your fitness goal</p>
+            </div>
+        </div>
+        <div class="right-half">  
+           <img src="img/handdraw.gif" alt="sketch of different sports">
+           
+        </div>
 
-    </script>
+    </div> 
+    <div class="signup-invisible" id = "invisible">
+        <div class="column">
+            <div class="center">
+                <div class="toplayer">
+                    <p>Sign Up</p>
+                    <span class="cancel_button" onclick="cancelFromwithin()" >&#10006;</span>
+                </div>
+            </div>
+            <div class="formclass">
+                <form class="signupform" action="javascript:void(0)" onsubmit="register(event)">
+                    <input type="text" class="input" placeholder="john" name="fname">
+                    <input type="text" class="input" placeholder="Doe" name="lname">
+                    <input type="email" class="input" placeholder="example@kmail.com" name="email">
+                    <div><input type="text" class="input" placeholder="JDoe112" name="username"><span class="notvalid"></span><span class="valid">✔️</span></div>
+                    <input type="text" class="input" placeholder="Password (0-9,a-z,A-Z,@/#/$/%)" name="psswd">
+                    <input type="text" class="input" placeholder="Re Enter the Password" name="repsswd">
+                    <input type="submit" class="btn" value="SignUp" >
+                    
+                </form>
+                    <div class="meswithin" id="meswithin"><p></p></div>
 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="main-container"><p>Copyright &#169; 2021 </p><p>Privacy Policy</p></div>
+    </footer>
+
+
+    
+<script rel="text/javascript" src="js/index.js"></script>
 </BODY>
 </html>
