@@ -14,7 +14,7 @@
             <div class="header-container">
                 <p class="title">ShredLife&#10084;&#65039;</p>
                 <div class="header-space"></div>
-                <div class="classbeforelogin"><div class="login"><p>Login</p></div></div>
+                <div class="classbeforelogin"><div class="login" onclick="loggle()"><p>Login</p></div></div>
                 <div class="classbeforesignup"><div class="signup" onclick="toggle()"><p>sign Up</p></div></div>
             </div>
         </div>
@@ -60,6 +60,30 @@
 
             </div>
         </div>
+        
+    </div>
+    {{!-- loginn form --}}
+    <div class="login-invisible" id = "loginvisible">
+        <div class="column">
+            <div class="center">
+                <div class="toplayer">
+                    <p>Login</p>
+                    <span class="cancel_button" onclick="cancelFromlogin()" >&#10006;</span>
+                </div>
+            </div>
+            <div class="formclass">
+                <form class="signupform" action="javascript:void(0)" onsubmit="authenticate(event)">
+                    <input type="text" class="input" placeholder="JDoe112" name="username">
+                    <input type="text" class="input" placeholder="Password (0-9,a-z,A-Z,@/#/$/%)" name="psswd">
+                   
+                    <input type="submit" class="btn" value="Log In" >
+                    
+                </form>
+                    <div class="meswithin" id='hell'><p></p></div>
+
+            </div>
+        </div>
+        
     </div>
 
     <footer>

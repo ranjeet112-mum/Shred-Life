@@ -116,7 +116,7 @@ footer .main-container {
     color:#738F93;
 }
 
-.signup-invisible {
+.signup-invisible , .login-invisible {
     
     position: absolute;
     top:100px;
@@ -137,30 +137,30 @@ footer .main-container {
 .visible {
     display: block;
 }
-.signup-invisible .column{
+.signup-invisible .column, .login-invisible .column{
     display: flex;
     flex-direction: column;
 }
-.signup-invisible .column .center {
+.signup-invisible .column .center, .login-invisible .column .center {
     display: flex;
     justify-content: center;
 }
-.signup-invisible .column .center .toplayer .cancel_button {
+.signup-invisible .column .center .toplayer .cancel_button,.login-invisible .column .center .toplayer .cancel_button{
     cursor: pointer;
 }
-.signup-invisible .column .center .toplayer p{
+.signup-invisible .column .center .toplayer p,.login-invisible .column .center .toplayer p{
     margin: 0;
 }
-.signup-invisible .column .center .toplayer{
+.signup-invisible .column .center .toplayer,.login-invisible .column .center .toplayer{
     margin-top: 25px;
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
-.signup-invisible .column .center .toplayer span:hover {
+.signup-invisible .column .center .toplayer span:hover, .login-invisible .column .center .toplayer span:hover{
     color: red;
 }
-.signup-invisible .column .formclass {
+.signup-invisible .column .formclass,.login-invisible .column .formclass{
     margin-top: 35px;
     text-align: center;
 }
@@ -195,6 +195,14 @@ footer .main-container {
 
 }
 
-.signup-invisible .valid{
+.signup-invisible .valid ,.login-invisible .valid{
     display: none;
 }
+
+.vanish {
+    visibility:hidden;
+}
+/* .signup-invisible .login{
+    display: flex;
+    flex-direction: column;
+} */
