@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(206, 206, 206);
+}
+header{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+  
+
+.navclass {
+    display: flex;
+    justify-content: center;
+    
+}
+/* .navbar {
+    display: flex;
+    flex-direction: column;
+} */
+.title {
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.separator {
+    border-right: 2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navclass p {
+    font-size: 18px;
+    margin: 0px;
+
+}
+.navclass i {
+    font-size: 25px;
+}
+.navtogether {
+    cursor: pointer;
+    /* background-color: black; */
+}
+.navtogether:hover {
+    font-size: 27px;
+}
+
+.selected {
+    background-color: chartreuse;
+}
+.personal {
+    display: flex;
+    justify-content: center;
+    margin-top:35px ;
+    /* border:2px solid black; */
+    /* width: 1000px; */
+}
+.user-info {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+
+}
+.personal p {
+    font-size : 25px;
+}
+.mes {
+    font-size: 48px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.bottom-sep {
+    margin-top: 10px;
+    border-bottom :10px solid rgb(66, 133, 0);
+    width: 100%;
+}
