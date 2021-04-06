@@ -62,13 +62,16 @@ function register(e) {
             }), 
             headers: { 
                 "Content-type": "application/json; charset=UTF-8"
-            }
+            },redirect: 'follow'
         }).then(response => {
          response.json().then(data => {
              if(data.err){
                  document.querySelector('.notvalid').innerText = '❌';
                  console.log('here');
+             }else {
+                 location.reload();
              }
+             
          })   
          
     })
@@ -108,3 +111,81 @@ function authenticate(e) {
         }
 )
 }
+
+function feedbk(e) {
+    e.preventDefault();
+    const email = document.querySelector("#femail");
+    const feedback = document.querySelector("#feedback");
+
+    // console.log(email.value,feedback.value);
+    const url = `/feedback?email=${email.value}&feedback=${feedback.value}`
+    // console.log(url);
+        fetch(url,{redirect: 'follow'})
+        .then(response => {
+            
+            
+            if (response.redirected) {
+                window.location.href = response.url;
+            }
+
+            response.json().then((data) => {
+            if(data.err){
+                // document.querySelector('#hell').innerText = 'Wrong pair of Credential! Please try again '
+                // console.log('triggered');
+            }
+
+        })
+        }
+)
+    
+}
+function enroll(s){
+    // console.log(s);
+    const url = `/enrol?id=${s}`
+    // console.log(url);
+        fetch(url,{redirect: 'follow'})
+        .then(response => {
+            
+            
+            if (response.redirected) {
+                window.location.href = response.url;
+            }
+
+            response.json().then((data) => {
+            if(data.err){
+                // document.querySelector('#hell').innerText = 'Wrong pair of Credential! Please try again '
+                // console.log('triggered');
+            }
+
+        })
+        })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
