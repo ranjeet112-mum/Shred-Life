@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head><title> SHRED LIFE | My workout profile</title>
+
+<link rel="shortcut icon    " href="img/shortcutlogo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/home.css">
+ </head>
+<body>
+    <header>
+        <p class="title">ShredLife&#10084;&#65039;</p>
+        <div class="navclass">
+            <div class="navtogether"><i class="fa fa-dashboard"> </i> <p>Dashboard</p></div>   <span class="separator"> </span>    <div class="navtogether" ><a href="/program" ><i class="fa fa-folder-open" ></i><p>Programs</p></a></div> <span class="separator"> </span>
+        <div class="navtogether"><a href="/calender" ><i class="fa fa-calendar"> </i> <p>Calander</p></a></div>   <span class="separator"> </span> 
+        <div class="navtogether selected"><a href="/video" ><i class="fa fa-video-camera"> </i> <p>Video</p></a></div>   <span class="separator"> </span> 
+        <div class="navtogether"><a href="help"><i class="fa fa-question-circle"></i>
+  <p>Help</p></a></div><a href="/logout">LOGOUT</a>
+        </div>
+    </header>
+
+    <div class="bottom-sep"> </div>
+
+    <div class = "personal"><div class="user-info"><img src="/img/download.png" alt="user image" width="175" height="175"><div class="info"><p>{{user}}</p> <label for="file">fat burner :</label>
+<progress id="file" value="100" max="100">  </progress> <label for="file">Bulk program:</label>
+<progress id="file" value="32" max="100"></progress>
+    </div></div><span class="separator"></span>    <i  class="fa mes">&#xf114;</i></div></div>
+
+
+
+
+    <div class="todaysworkout">
+        
+        <style>
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+	width: 100%;
+  max-width: 600px;
+	margin: 25px auto;
+}
+.youtube {
+	background-color: #000;
+	margin-bottom: 30px;
+	position: relative;
+	padding-top: 56.25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.youtube img {
+	width: 100%;
+	top: -16.82%;
+	left: 0;
+	opacity: 0.7;
+}
+.youtube .play-button {
+	width: 90px;
+	height: 60px;
+	z-index: 1;
+}
+.youtube .play-button .ytp-large-play-button-bg {
+  fill: #212121;
+	opacity: 0.8;
+}
+.youtube .play-button:before {
+	content: "";
+	border-style: solid;
+	border-width: 15px 0 15px 26.0px;
+	border-color: transparent transparent transparent #fff;
+}
+.youtube img,
+.youtube .play-button {
+	cursor: pointer;
+}
+.youtube:hover > .play-button .ytp-large-play-button-bg {
+  fill: #f00;
+  opacity: 1;
+}
+.youtube:hover > .play-button,
+.youtube .play-button:hover {
+  /* background-color: #f00; */
+  /* opacity: 1; */
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+	position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+</style>
+<h1>Workout videos</h1>
+<div class="wrapper">
+  <div
+    id="youtube"
+    class="youtube"
+    data-embed="OHnKzCbtm5Y">
+    <div class="play-button">
+      <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+        <path class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script>
+window.onload = () => {
+  const youtube = document.getElementById('youtube')
+  const source = "https://img.youtube.com/vi/"+ youtube.dataset.embed +"/sddefault.jpg";
+  const image = new Image();
+  image.src = source;
+  image.addEventListener("load", () => { youtube.appendChild(image) });
+
+  youtube.addEventListener("click", () => {
+    const iframe = document.createElement("iframe");
+    iframe.setAttribute( "frameborder", "0" );
+    iframe.setAttribute( "allowfullscreen", "" );
+    iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ youtube.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+    youtube.innerHTML = "";
+    youtube.appendChild( iframe );
+  });
+}
+</script>
+        
+    <footer class="footofhome">
+        <h2>This is a Project made by Ranjit(01), Shubham(02), Sidhant(06)</h2>
+
+
+    </footer>
+    {{!-- <p style="font-size: x-large;">Hello there! {{user}}</p> --}}
+<script rel="text/javascript" src="js/index.js"></script>
+</body>
+</html>
