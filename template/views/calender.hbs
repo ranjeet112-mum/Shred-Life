@@ -1,1 +1,170 @@
-hello calender
+<!DOCTYPE html>
+<head><title> SHRED LIFE | My workout profile</title>
+<style>
+
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #272727;
+	background: rgb(247,251,252);
+	background: -moz-linear-gradient(top,  rgba(247,251,252,1) 0%, rgba(217,237,242,1) 40%, rgba(173,217,228,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,251,252,1)), color-stop(40%,rgba(217,237,242,1)), color-stop(100%,rgba(173,217,228,1)));
+	background: -webkit-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
+	background: -o-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
+	background: linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
+}
+
+</style>
+<link rel="shortcut icon    " href="img/shortcutlogo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/home.css">
+ </head>
+<body>
+    <header>
+        <p class="title">ShredLife&#10084;&#65039;</p>
+        <div class="navclass">
+            <div class="navtogether"><a href="/" /><i class="fa fa-dashboard"> </i> <p>Dashboard</p></div>   <span class="separator"> </span>    <div class="navtogether" ><a href="/program" ><i class="fa fa-folder-open" ></i><p>Programs</p></a></div> <span class="separator"> </span>
+        <div class="navtogether selected"><a href="/calender" ><i class="fa fa-calendar"> </i> <p>Calander</p></a></div>   <span class="separator"> </span> 
+        <div class="navtogether "><a href="/video" ><i class="fa fa-video-camera"> </i> <p>Video</p></a></div>   <span class="separator"> </span> 
+        <div class="navtogether"><a href="help"><i class="fa fa-question-circle"></i>
+  <p>Help</p></a></div><a href="/logout">LOGOUT</a>
+        </div>
+    </header>
+
+    <div class="bottom-sep"> </div>
+
+    <div class = "personal"><div class="user-info"><img src="/img/download.png" alt="user image" width="175" height="175"><div class="info"><p>{{user}}</p> <label for="file">fat burner :</label>
+<progress id="file" value="100" max="100">  </progress> <label for="file">Bulk program:</label>
+<progress id="file" value="32" max="100"></progress>
+    </div></div><span class="separator"></span>    <i  class="fa mes">&#xf114;</i></div></div>
+
+
+
+
+    <div class="todaysworkout">
+        
+<style>
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,300);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+$color: #0191B0;
+$background: #0A5D8E;
+$white: #F0F5F8;
+
+body {
+  background: $background;
+}
+
+.container {
+  width: 200px;
+  height: 170px;
+  background: $color;
+  position:relative;
+  margin: auto;
+  top: 30px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#day {
+  position: relative;
+  top: 15px;
+  color: $white;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.daycontainer {
+  width: 160px;
+  height: 100px;
+  background: $white;
+  position: absolute;
+  top: 54px;
+  left: 20px;
+}
+
+#number {
+  position: relative;
+  top: -22px;
+  font-size: 110px;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $color;
+}
+
+.thing1 {
+  width: 10px;
+  height: 30px;
+  background: $color;
+  position: relative;
+  left: 30px;
+  bottom: 60px;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.thing2 {
+  width: 10px;
+  height: 30px;
+  background: $color;
+  position: relative;
+  left: 160px;
+  bottom: 90px;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.hole1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: $background;
+  position: relative;
+  left: 20px;
+  bottom: 110px;
+}
+
+.hole2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: $background;
+  position: relative;
+  left: 150px;
+  bottom: 140px;
+}
+</style>
+<div class="container">
+  <span id="day">Wednesday</span>
+  <div class="daycontainer">
+    <span id="number">7</span>
+  </div>
+  <div class="thing1"></div>
+  <div class="thing2"></div>
+  <div class="hole1"></div>
+  <div class="hole2"></div>
+</div>
+<script>
+w(function () {
+	var date = new Date(),
+	weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+	document.getElementById('day').innerHTML = weekday[date.getDay()];
+	document.getElementById('number').innerHTML = date.getDate();
+}) ();
+</script>
+        
+    <footer class="footofhome">
+        <h2>This is a Project made by Ranjit(01), Shubham(02), Sidhant(06)</h2>
+
+
+    </footer>
+    {{!-- <p style="font-size: x-large;">Hello there! {{user}}</p> --}}
+<script rel="text/javascript" src="js/index.js"></script>
+</body>
+</html>
