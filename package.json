@@ -7,7 +7,9 @@
     "hbs": "^4.1.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.3",
-    "path": "^0.12.7"
+    "node-calendar": "^0.1.5",
+    "path": "^0.12.7",
+    "tui-calendar": "^1.13.0"
   },
   "name": "Shred Life",
   "version": "1.0.0",
